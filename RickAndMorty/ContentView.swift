@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var vm = RMViewModel()
+    @State var isLoading: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            if !isLoading {
+                SplashScreenView()
+            } else {
+                CharactersView(vm: vm)
+            }
         }
-        .padding()
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                withAnimation {
+                    self.isLoading = true
+                }
+            }
+        }
+        .task {
+            await vm.fetchCharacters()
+        }
     }
 }
 
