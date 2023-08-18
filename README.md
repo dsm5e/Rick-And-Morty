@@ -15,4 +15,9 @@ Test app with SWIFTUI MVVM for 1221systems
 <img width="1670" alt="2023-08-12_22 22 17" src="https://github.com/dsm5e/Rick-And-Morty/assets/88927934/5cddbb8f-ef0c-4c10-b385-66258c2000cf">
 
 ---
-![ezgif com-video-to-gif (1)](https://github.com/dsm5e/Rick-And-Morty/assets/88927934/216ffe50-6274-4d6c-a50f-318726fc18e0)
+
+<p align="center">
+  <img width="360" src="https://github.com/dsm5e/Rick-And-Morty/assets/88927934/216ffe50-6274-4d6c-a50f-318726fc18e0">
+</p>
+
+---
